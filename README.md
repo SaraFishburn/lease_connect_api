@@ -9,7 +9,7 @@ Collaborators: Gemma Elsom, Rafael Mello, Sara Fishburn
 
 
 ## Lease Connect - Description
-- Purpose
+### Purpose
 
   One of the most common causes of frustration for tenants and property managers is the lack of or difficulty in contact. Missing calls and emails without replies can make people frustrated. And this is not very good for the business.
   A property manager should be reachable to their tenants without endless emails. 
@@ -19,7 +19,7 @@ Collaborators: Gemma Elsom, Rafael Mello, Sara Fishburn
    Managers or their teams can provide the best solution to the issue during business hours. With property management software the communication can go smoothly and without inconvenience at any time.
   Also property managers have a very busy life. At the office, on the road or visiting properties, they are always on the go. Having a mobile version all in one management application can help them to do the work wherever they are.
 
-- Functionality / features
+### Functionality / features
 
   There are three main features of Lease Connect.
 
@@ -57,12 +57,10 @@ Collaborators: Gemma Elsom, Rafael Mello, Sara Fishburn
   - Pinning \
     The landing page for a property manager will display all the houses managed by the company. Property managers will have the ability to 'pin' houses they specifically look after to the top of the page for easy access.
 
-- Target audience
+### Target audience
   The target audience for Lease Connect from a client perspective is real estate agencies located in metropolitan areas in Australia. Mainly concentrated in the rentals department of those businesses. Companies that appreciate tech solutions and see the digital transformation as a great opportunity to create a more efficient and cohesive service to their tenants.
 
   The other audience this application is purposed for is the tenants of these businesses that appreciate a technology based solution to the communication issues that arise when renting a property managed by a real estate.
-
-- Tech stack
 
 ### Tech Stack
 
