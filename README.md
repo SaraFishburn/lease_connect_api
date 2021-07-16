@@ -39,6 +39,23 @@ Collaborators: Gemma Elsom, Rafael Mello, Sara Fishburn
 
 - Tech stack
 
+### Tech Stack
+
+#### Front End
+- React: React will be used to develop the front-end of the application. It is a Javascript library that is used to build interactive user interfaces. 
+
+- Netlify: Netlify will be used to deploy the front-end of Lease Connect. It is a serverless and cloud-based hosting platform, and is best used for front-end deployment.
+
+- Cloudinary: Cloudinary will be used to store all media that can be uploaded onto the application. Cloudinary offers a cloud-based solution to handling images and videos at any scale. 
+
+#### Back End
+
+- Heroku: Heroku will be used to deploy the back-end of Lease Connect. Heroku is a serverless and cloud-based hosting platform, and offers scalability and security to developers.
+
+- PostgreSQL: PostgreSQL will be the database system that will be used for Lease Connect. It is a powerful, object-relational database system that can be used to store data for both web and mobile applications.
+
+- Rails: Ruby on Rails will be used to build the back-end of Lease Connect. It is a server-side web application framework. 
+
 ## Dataflow Diagram
 
 The following diagram outlines the flow and storage of data throughout the application. All data flow begins with the action of an external entity which in this case is a user of the application. The user action triggers a process on the front end that in turn activates a process on the backend server via a request to the backend API. The server then queries or stores data in the database and sends a response back to the frontend where appropriate.
@@ -46,6 +63,13 @@ The following diagram outlines the flow and storage of data throughout the appli
 ![Dataflow Diagram](docs/lease_connect_dataflow_diagram.png)
 
 ## Application Architecture Diagram
+![Architecture Diagram](docs/ArchitectureDiagram.png)
+
+The Architecture Diagram for the Lease Connect Application has been split into two sections, Client and Server. There is a key in the top left of the page that shows the meaning of different colours used throughout the diagram.
+
+All Client side architecture is in Green, and has been wrapped in a container to show that Netlify will be the deployment platform for the front-end. React will be used to build the front-end of the application.
+
+Heroku is the deployment platform that will be used for the back-end of the application, and the server and database are included in this. In Yellow are the API's that are used in the application, JSON and Cloudinary. The two types of Client to Server requests that will be made are JSON and HTTP.
 
 ## User Stories
 ### MVP
