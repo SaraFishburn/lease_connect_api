@@ -325,6 +325,8 @@ In the My Account section for admin, users can change their first name, last nam
 
 ## Trello Screenshots
 
+We use an Agile approach to manage our project, holding daily stand-up meetings. These brief meetings allowed us to touch base and get on the same page about how the project was going. Each day we set a sprint goal for each member of the team, with daily tasks. Those daily tasks were updated and uploaded to the Trello Board.
+
 ![Trello Screenshot](docs/trello_screenshots/2021-07-13_8.40am.png)
 ![Trello Screenshot](docs/trello_screenshots/2021-07-13_12.56pm.png)
 ![Trello Screenshot](docs/trello_screenshots/2021-07-14_8.55am.png)
