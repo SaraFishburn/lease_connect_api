@@ -15,12 +15,17 @@ Collaborators: Gemma Elsom, Rafael Mello, Sara Fishburn
 - Tech stack
 
 ### Tech Stack
-- React
-- Heroku
-- Postgres
-- Cloudinary
-- Netlify
-- Rails
+- React: React will be used to develop the front-end of the application. It is a Javascript library that is used to build interactive user interfaces. 
+
+- Netlify: Netlify will be used to deploy the front-end of Lease Connect. It is a serverless and cloud-based hosting platform, and is best used for front-end deployment.
+
+- Heroku: Heroku will be used to deploy the back-end of Lease Connect. Heroku is a serverless and cloud-based hosting platform, and offers scalability and security to developers.
+
+- PostgreSQL: PostgreSQL will be the database system that will be used for Lease Connect. It is a powerful, object-relational database system that can be used to store data for both web and mobile applications.
+
+- Cloudinary: Cloudinary will be used to store all media that can be uploaded onto the application. Cloudinary offers a cloud-based solution to handling images and videos at any scale. 
+
+- Rails: Ruby on Rails will be used to build the back-end of Lease Connect. It is a server-side web application framework. 
 
 ## Dataflow Diagram
 
