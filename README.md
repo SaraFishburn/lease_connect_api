@@ -29,6 +29,9 @@ Collaborators: Gemma Elsom, Rafael Mello, Sara Fishburn
     - Status Flags \
     Property managers will have the ability to set flags on these requests with pending and done to notify the tenant as to the status of the processing of the request.
 
+    - Notifications \
+    When a maintenance request is created by a tenant the property manager receives a notification in the form of a bell icon attached to the corresponding house on the property manager's home page.
+
   - Documentation \
     On a 'documentation' page, tenants have the ability to view all their documents pertaining to their rental (lease, entry condition report, etc) in one place. Buttons for each document will be present which when selected will direct the tenant to an image of the document in question.
 
@@ -144,4 +147,3 @@ The following diagram outlines the flow and storage of data throughout the appli
 ![Trello Screenshot](docs/trello_screenshots/2021-07-15_1.15pm.png)
 ![Trello Screenshot](docs/trello_screenshots/2021-07-15_10.07am.png)
 ![Trello Screenshot](docs/trello_screenshots/2021-07-16_9.30am.png)
-
