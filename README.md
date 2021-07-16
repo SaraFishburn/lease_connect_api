@@ -73,15 +73,15 @@ Collaborators: Gemma Elsom, Rafael Mello, Sara Fishburn
 
 - Netlify: Netlify will be used to deploy the front-end of Lease Connect. It is a serverless and cloud-based hosting platform, and is best used for front-end deployment.
 
-- Cloudinary: Cloudinary will be used to store all media that can be uploaded onto the application. Cloudinary offers a cloud-based solution to handling images and videos at any scale. 
-
 #### Back End
-
-- Heroku: Heroku will be used to deploy the back-end of Lease Connect. Heroku is a serverless and cloud-based hosting platform, and offers scalability and security to developers.
+- Rails: Ruby on Rails will be used to build the back-end of Lease Connect. It is a server-side web application framework. 
 
 - PostgreSQL: PostgreSQL will be the database system that will be used for Lease Connect. It is a powerful, object-relational database system that can be used to store data for both web and mobile applications.
 
-- Rails: Ruby on Rails will be used to build the back-end of Lease Connect. It is a server-side web application framework. 
+- Heroku: Heroku will be used to deploy the back-end of Lease Connect. Heroku is a serverless and cloud-based hosting platform, and offers scalability and security to developers.
+
+#### External API
+- Cloudinary: Cloudinary will be used to store all media that can be uploaded onto the application. Cloudinary offers a cloud-based solution to handling images and videos at any scale. 
 
 ## Dataflow Diagram
 
