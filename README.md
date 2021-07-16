@@ -194,21 +194,31 @@ All three versions of the application, mobile, tablet and desktop, include a ham
 
 Home
 
+The property manager home page displays a list of all the houses managed by the company with the houses specifically managed by the current property manager pinned to the top. By displaying all houses, it is easy to help a colleague manage a house of theirs or cover for them when they are away. Each house record has a picture, title, address, and tenant list.
+
 ![Property Manager Home](docs/pm_home.png)
 
 Property
+
+This is the summary page a property manager is redirected to when they select a house on their home page. It displays a brief description of the house selected and the tenants residing there, any maintenance jobs, documents, and a button to upload new documents.
 
 ![Property Manager Property](docs/pm_property.png)
 
 Calendar
 
+The property manager calendar displays a calendar that is marked with any upcoming events such as inspections or days where maintenance jobs are being attended to for properties the property manager has pinned in their home page. There is a full month display of the calendar, and then upcoming events are displayed clearly with details such as event description and time.
+
 ![Property Manager Calendar](docs/pm_calendar.png)
 
 My Account
 
+This page allows property managers to update their account details. They can edit their first name, last name, email address, and change their password. As admin will set a generic password when the account is created, this page will need to be used to change the password to a more secure one once the property manager has been given the account details.
+
 ![Property Manager My Account](docs/pm_my_account.png)
 
 Create Account
+
+This page allows property managers to create a new account for a tenant. In order to create the account, the property manager needs to provide the tenants first and last name, phone number, email address and a temporary password.
 
 ![Property Manager Create Account](docs/pm_create_account.png)
 </details>
