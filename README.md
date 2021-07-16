@@ -10,8 +10,33 @@ Collaborators: Gemma Elsom, Rafael Mello, Sara Fishburn
 
 ## Lease Connect - Description
 - Purpose
+
+  One of the most common causes of frustration for tenants and property managers is the lack of or difficulty in contact. Missing calls and emails without replies can make people frustrated. And this is not very good for the business.
+  A property manager should be reachable to their tenants without endless emails. 
+
+  The purpose of Lease Connect is to relieve some of these frustrations.
+
+   Managers or their teams can provide the best solution to the issue during business hours. With property management software the communication can go smoothly and without inconvenience at any time.
+  Also property managers have a very busy life. At the office, on the road or visiting properties, they are always on the go. Having a mobile version all in one management application can help them to do the work wherever they are.
+
 - Functionality / features
+
+  There are three main features of Lease Connect.
+
+  - **Maintenance Request** \
+    If a tenant needs to speak to their property manager about, for example, a maintenance issue, they can do it anytime lodging an application.
+
+  - **Documentation**
+
+  - **Calendar**
+
+
+
 - Target audience
+  The target audience for Lease Connect from a client perspective is real estate agencies located in metropolitan areas in Australia. Mainly concentrated in the rentals department of those businesses. Companies that appreciate tech solutions and see the digital transformation as a great opportunity to create a more efficient and cohesive service to their tenants.
+
+  The other audience this application is purposed for is the tenants of these businesses that appreciate a technology based solution to the communication issues that arise when renting a property managed by a real estate.
+
 - Tech stack
 
 ### Tech Stack
@@ -47,7 +72,6 @@ All Client side architecture is in Green, and has been wrapped in a container to
 Heroku is the deployment platform that will be used for the back-end of the application, and the server and database are included in this. In Yellow are the API's that are used in the application, JSON and Cloudinary. The two types of Client to Server requests that will be made are JSON and HTTP.
 
 ## User Stories
-
 ### MVP
 
   #### General Features
@@ -110,4 +134,65 @@ Heroku is the deployment platform that will be used for the back-end of the appl
   [CALENDAR] As a property manager, I want to be able to block out periods of time that I am OOO and cannot assist with enquiries, so that tenants are aware of why I may not respond immediately.
 
 ## Wireframes
+
+<details>
+<summary>General Components Wireframes</summary>
+
+![General Component Login](docs/general_login.png)
+
+![General Component Menu](docs/general_menu.png)
+</details>
+  
+<details>
+<summary>Property Manager Wireframes</summary>
+
+![Property Manager Home](docs/pm_home.png)
+
+![Property Manager Property](docs/pm_property.png)
+
+![Property Manager Calendar](docs/pm_calendar.png)
+
+![Property Manager My Account](docs/pm_my_account.png)
+
+![Property Manager Create Account](docs/pm_create_account.png)
+</details>
+
+<details>
+<summary>Tenant Wireframes</summary>
+
+![Tenant Home](docs/tenant_home.png)
+
+![Tenant Maintenance](docs/tenant_maintenance.png)
+
+![Tenant Request Maintenance](docs/tenant_request_maintenance.png)
+
+![Tenant Documents](docs/tenant_documents.png)
+
+![Tenant My Account](docs/tenant_my_account.png)
+</details>
+
+<details>
+<summary>Admin Wireframes</summary>
+
+![Admin Home](docs/admin_home.png)
+
+![Admin Create Account](docs/admin_create_account.png)
+
+![Admin Create Property Manager Account](docs/admin_create_pm_account.png)
+
+![Admin Create Tenant Account](docs/admin_create_tenant_account.png)
+
+![Admin Create House](docs/admin_create_house.png)
+
+![Admin My Account](docs/admin_my_account.png)
+</details>
+
 ## Trello Screenshots
+
+![Trello Screenshot](docs/trello_screenshots/2021-07-13_8.40am.png)
+![Trello Screenshot](docs/trello_screenshots/2021-07-13_12.56pm.png)
+![Trello Screenshot](docs/trello_screenshots/2021-07-14_8.55am.png)
+![Trello Screenshot](docs/trello_screenshots/2021-07-15_1.15pm.png)
+![Trello Screenshot](docs/trello_screenshots/2021-07-15_10.07am.png)
+![Trello Screenshot](docs/trello_screenshots/2021-07-16_9.30am.png)
+
