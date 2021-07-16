@@ -85,4 +85,57 @@ The following diagram outlines the flow and storage of data throughout the appli
   [CALENDAR] As a property manager, I want to be able to block out periods of time that I am OOO and cannot assist with enquiries, so that tenants are aware of why I may not respond immediately.
 
 ## Wireframes
+
+<details>
+<summary>General Components Wireframes</summary>
+
+![General Component Login](docs/general_login.png)
+
+![General Component Menu](docs/general_menu.png)
+</details>
+  
+<details>
+<summary>Property Manager Wireframes</summary>
+
+![Property Manager Home](docs/pm_home.png)
+
+![Property Manager Property](docs/pm_property.png)
+
+![Property Manager Calendar](docs/pm_calendar.png)
+
+![Property Manager My Account](docs/pm_my_account.png)
+
+![Property Manager Create Account](docs/pm_create_account.png)
+</details>
+
+<details>
+<summary>Tenant Wireframes</summary>
+
+![Tenant Home](docs/tenant_home.png)
+
+![Tenant Maintenance](docs/tenant_maintenance.png)
+
+![Tenant Request Maintenance](docs/tenant_request_maintenance.png)
+
+![Tenant Documents](docs/tenant_documents.png)
+
+![Tenant My Account](docs/tenant_my_account.png)
+</details>
+
+<details>
+<summary>Admin Wireframes</summary>
+
+![Admin Home](docs/admin_home.png)
+
+![Admin Create Account](docs/admin_create_account.png)
+
+![Admin Create Property Manager Account](docs/admin_create_pm_account.png)
+
+![Admin Create Tenant Account](docs/admin_create_tenant_account.png)
+
+![Admin Create House](docs/admin_create_house.png)
+
+![Admin My Account](docs/admin_my_account.png)
+</details>
+
 ## Trello Screenshots
