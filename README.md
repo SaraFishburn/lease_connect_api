@@ -136,9 +136,55 @@ Heroku is the deployment platform that will be used for the back-end of the appl
 ## Wireframes
 
 <details>
+<summary>Creation Process</summary>
+
+### 13/07/2021
+
+#### Brainstorm Meeting 
+
+  Research for competitors, discussed the design concept, sketched some ideas and designs and defined some key points:
+  - Mobile First
+  - Blocks to organise the content 
+  - collapsible menu 
+
+  Resolution: From the sketched designs create a graphic version using Balsamiq, considering all the key point. Present the wireframes mobile version on the next meeting for approval. 
+
+### 15/07/2021
+
+#### Meeting Suggestions
+
+  - "Property Manager" Property Wireframe: Add the "delete" icon to the maintenance jobs so the property managers can delete past jobs if necessary. Add the "documents" section with all previously uploaded documents related to that property. Add the "delete" icon to the documents so the property can delete a certain document.
+
+  - "Property Manager" Create Account Wireframe: Change the naming "household" to "tenant". Add "checkbox" to the property section.
+
+  - "Tenant" Maintenance Wireframe: Move the "new request" section to the top of the page.
+
+  - "Admin" Home Wireframe: Change the naming "household" to "tenant". Put the "house" section before the "tenants" section.
+
+  - Final decision: All suggestions have been implemented and final mobile wireframes uploaded
+
+### 16/07/2021
+
+#### Meeting Suggestions
+
+  - "Off-canvas" menu should be a dropdown menu for Ipad and Desktop version.
+
+  - Final decision: All suggestions have been implemented and final Ipad and Desktop wireframes uploaded
+
+</details>
+
+<details>
 <summary>General Components Wireframes</summary>
 
+Login
+
+The login page is the same for all users. It features a simple login screen that asks for the users email address and password. There is no option to "Register" for an account, as accounts can only be created by admin or a property manager.
+
 ![General Component Login](docs/general_login.png)
+
+Menu
+
+All three versions of the application, mobile, tablet and desktop, include a hamburger menu that is located in the top right corner of the page. For admin and property managers the menu will display three options, "My Account", "Create Account", and "Calendar". For users with the role of tenant, the menu will display, "My Account", "Maintenance", and "Documents".
 
 ![General Component Menu](docs/general_menu.png)
 </details>
@@ -146,13 +192,23 @@ Heroku is the deployment platform that will be used for the back-end of the appl
 <details>
 <summary>Property Manager Wireframes</summary>
 
+Home
+
 ![Property Manager Home](docs/pm_home.png)
+
+Property
 
 ![Property Manager Property](docs/pm_property.png)
 
+Calendar
+
 ![Property Manager Calendar](docs/pm_calendar.png)
 
+My Account
+
 ![Property Manager My Account](docs/pm_my_account.png)
+
+Create Account
 
 ![Property Manager Create Account](docs/pm_create_account.png)
 </details>
@@ -160,13 +216,33 @@ Heroku is the deployment platform that will be used for the back-end of the appl
 <details>
 <summary>Tenant Wireframes</summary>
 
+Home
+
+The tenant home page displays a calendar that is marked with any upcoming events such as inspections or days where maintenance jobs are being attended to. There is a full month display of the calendar, and then upcoming events are displayed clearly with details such as event description and time.
+
 ![Tenant Home](docs/tenant_home.png)
+
+Maintenance
+
+On this page, tenants can see all previous maintenance requests that they've made. On each request there is a button that shows if the request is pending, unread, or done. They will also have the option here to create a new maintenance request.
 
 ![Tenant Maintenance](docs/tenant_maintenance.png)
 
+Request Maintenance
+
+On this page, tenants can submit a request to have maintenance done on the house. They will need to provide a summary statement of what the issue is, a further description of what needs to be fixed, and they can upload an image of the issue. This request will then be sent through to the property manager directly.
+
 ![Tenant Request Maintenance](docs/tenant_request_maintenance.png)
 
+Documents
+
+This page allows tenants to view all documents related to them. Tenant can click in the file icon to download the document. 
+
 ![Tenant Documents](docs/tenant_documents.png)
+
+My Account
+
+This page allows tenants to update their account details. They can edit their first name, last name, email address, and change their password. As admin will set a generic password when the account is created, this page will need to be used to change the password to a more secure one once the tenant has been given the account details.
 
 ![Tenant My Account](docs/tenant_my_account.png)
 </details>
@@ -174,15 +250,39 @@ Heroku is the deployment platform that will be used for the back-end of the appl
 <details>
 <summary>Admin Wireframes</summary>
 
+Home 
+
+The Home page for admin stores information about the property managers, houses, and tenants that are linked to the admin account. On this page, admin can delete the profile for any house, tenant or property manager.
+
 ![Admin Home](docs/admin_home.png)
+
+Create Account
+
+This is the page that admin will go to in order to create an account for either a property manager, a house or a tenant. They have three clear options to choose from, and once selected they will be directed to another page for the individual account they need to create.
 
 ![Admin Create Account](docs/admin_create_account.png)
 
+Create Property Manager Account
+
+This page allows admin to create a new account for a Property Manager. In order to create the account, admin needs to provide the property managers first and last name, phone number, email address and a temporary password.
+
 ![Admin Create Property Manager Account](docs/admin_create_pm_account.png)
+
+Create Tenant Account
+
+This page allows admin to create a new account for a Tenant. In order to create the account, admin needs to provide the tenant first and last name, phone number, email address and a temporary password. And select which property the tenant belongs to. 
 
 ![Admin Create Tenant Account](docs/admin_create_tenant_account.png)
 
+Create House 
+
+On this page, admin can create an account for the individual tenants of a household. They will need to provide the tenants first name, last name, phone number, email address, a temporary password, and select which property they live in and are associated to.
+
 ![Admin Create House](docs/admin_create_house.png)
+
+My Account
+
+In the My Account section for admin, users can change their first name, last name, and email address as well as update their password. This page can be accessed through the "My Account" option on the menu.
 
 ![Admin My Account](docs/admin_my_account.png)
 </details>
