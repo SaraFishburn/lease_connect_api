@@ -15,12 +15,12 @@ Collaborators: Gemma Elsom, Rafael Mello, Sara Fishburn
 - Tech stack
 
 ### Tech Stack
-React
-Heroku
-Postgres
-Cloudinary
-Netlify
-Rails
+- React
+- Heroku
+- Postgres
+- Cloudinary
+- Netlify
+- Rails
 
 ## Dataflow Diagram
 
