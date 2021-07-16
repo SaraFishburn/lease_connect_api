@@ -14,10 +14,11 @@ Collaborators: Gemma Elsom, Rafael Mello, Sara Fishburn
   One of the most common causes of frustration for tenants and property managers is the lack of or difficulty in contact. Missing calls and emails without replies can make people frustrated. And this is not very good for the business.
   A property manager should be reachable to their tenants without endless emails. 
 
-  The purpose of Lease Connect is to relieve some of these frustrations.
-
    Managers or their teams can provide the best solution to the issue during business hours. With property management software the communication can go smoothly and without inconvenience at any time.
   Also property managers have a very busy life. At the office, on the road or visiting properties, they are always on the go. Having a mobile version all in one management application can help them to do the work wherever they are.
+  
+  
+  The purpose of Lease Connect is to relieve some of these frustrations by providing a streamlined property management communication system.
 
 ### Functionality / features
 
