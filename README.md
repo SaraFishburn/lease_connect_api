@@ -10,8 +10,33 @@ Collaborators: Gemma Elsom, Rafael Mello, Sara Fishburn
 
 ## Lease Connect - Description
 - Purpose
+
+  One of the most common causes of frustration for tenants and property managers is the lack of or difficulty in contact. Missing calls and emails without replies can make people frustrated. And this is not very good for the business.
+  A property manager should be reachable to their tenants without endless emails. 
+
+  The purpose of Lease Connect is to relieve some of these frustrations.
+
+   Managers or their teams can provide the best solution to the issue during business hours. With property management software the communication can go smoothly and without inconvenience at any time.
+  Also property managers have a very busy life. At the office, on the road or visiting properties, they are always on the go. Having a mobile version all in one management application can help them to do the work wherever they are.
+
 - Functionality / features
+
+  There are three main features of Lease Connect.
+
+  - **Maintenance Request** \
+    If a tenant needs to speak to their property manager about, for example, a maintenance issue, they can do it anytime lodging an application.
+
+  - **Documentation**
+
+  - **Calendar**
+
+
+
 - Target audience
+  The target audience for Lease Connect from a client perspective is real estate agencies located in metropolitan areas in Australia. Mainly concentrated in the rentals department of those businesses. Companies that appreciate tech solutions and see the digital transformation as a great opportunity to create a more efficient and cohesive service to their tenants.
+
+  The other audience this application is purposed for is the tenants of these businesses that appreciate a technology based solution to the communication issues that arise when renting a property managed by a real estate.
+
 - Tech stack
 
 ## Dataflow Diagram
@@ -21,8 +46,8 @@ The following diagram outlines the flow and storage of data throughout the appli
 ![Dataflow Diagram](docs/lease_connect_dataflow_diagram.png)
 
 ## Application Architecture Diagram
-## User Stories
 
+## User Stories
 ### MVP
 
   #### General Features
@@ -139,3 +164,11 @@ The following diagram outlines the flow and storage of data throughout the appli
 </details>
 
 ## Trello Screenshots
+
+![Trello Screenshot](docs/trello_screenshots/2021-07-13_8.40am.png)
+![Trello Screenshot](docs/trello_screenshots/2021-07-13_12.56pm.png)
+![Trello Screenshot](docs/trello_screenshots/2021-07-14_8.55am.png)
+![Trello Screenshot](docs/trello_screenshots/2021-07-15_1.15pm.png)
+![Trello Screenshot](docs/trello_screenshots/2021-07-15_10.07am.png)
+![Trello Screenshot](docs/trello_screenshots/2021-07-16_9.30am.png)
+
