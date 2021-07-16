@@ -101,63 +101,63 @@ Heroku is the deployment platform that will be used for the back-end of the appl
 ### MVP
 
   #### General Features
-  As a user I want an option for me to update my contact details so that my property manager can always contact me.
+  - As a user I want an option for me to update my contact details so that my property manager can always contact me.
 
-  As an admin, I can create a household account with temporary login details so that I have control over who has an account.
+  - As an admin, I can create a household account with temporary login details so that I have control over who has an account.
 
-  As an admin, I can create a property manager account with temporary details so that I can control who has access to household details.
+  - As an admin, I can create a property manager account with temporary details so that I can control who has access to household details.
 
-  As an admin, I have the ability to delete household and property manager accounts so that I have control of who can access household details.
+  - As an admin, I have the ability to delete household and property manager accounts so that I have control of who can access household details.
 
-  As a user, I want to be able to log in, so that I can access my account.
+  - As a user, I want to be able to log in, so that I can access my account.
 
   #### Maintenance Request
-  As a property manager, I want to see which tenant made the maintenance request, so I can know who made the request and where I should send my maintenance team
+  - As a property manager, I want to see which tenant made the maintenance request, so I can know who made the request and where I should send my maintenance team
 
-  As a property manager, I want to see all the maintenance jobs requests, so I can help the tenants to get their problem fixed
+  - As a property manager, I want to see all the maintenance jobs requests, so I can help the tenants to get their problem fixed
 
-  As a tenant, I want to upload a photo of my problem, so the property manager can understand clearly what is the problem
+  - As a tenant, I want to upload a photo of my problem, so the property manager can understand clearly what is the problem
 
-  As a tenant, I want to lodge a maintenance job when I have something to get fixed at the property, so I can get the problem solved
+  - As a tenant, I want to lodge a maintenance job when I have something to get fixed at the property, so I can get the problem solved
 
   #### Documentation
-  As a property manager, I want to be able to serve tenants with documents, so that I don't have to send them emails with pdf attachments.
+  - As a property manager, I want to be able to serve tenants with documents, so that I don't have to send them emails with pdf attachments.
 
-  As a user, I want to be able to see all documentation that relates to the household.
+  - As a user, I want to be able to see all documentation that relates to the household.
 
   #### Calendar
 
-  As a property manager, I want to be able to clearly see all commitments I have on a given day, so that I can be sure to not miss anything important.
+  - As a property manager, I want to be able to clearly see all commitments I have on a given day, so that I can be sure to not miss anything important.
 
-  As a tenant, I want to have full coverage of any important dates, visits or inspections so that I can plan my life around these appointments.
+  - As a tenant, I want to have full coverage of any important dates, visits or inspections so that I can plan my life around these appointments.
 
-  As a property manager, I want to have all of my tenants lease dates in my calendar so that all of the information is stored in one, easy to read place
+  - As a property manager, I want to have all of my tenants lease dates in my calendar so that all of the information is stored in one, easy to read place
 
-  As a property manager, I want all maintenance appointments to be stored in the calendar, and for the tenant to be able to see them too. This is so that both parties are aware of when a visitor will be attending the property.
+  - As a property manager, I want all maintenance appointments to be stored in the calendar, and for the tenant to be able to see them too. This is so that both parties are aware of when a visitor will be attending the property.
 
 ### Non-MVP
   The following are user stories that are not integral to the main functionality of the app but that may be implemented as features in the future.
 
   #### Maintenance
-  As a tenant, I want to track my maintenance job application, so I can monitor my application and know what happens next
+  - As a tenant, I want to track my maintenance job application, so I can monitor my application and know what happens next
 
   #### Documentation
-  As a tenant, I want to sign my lease renewal using an online form, so that I don't need to print and fill a pdf document.
+  - As a tenant, I want to sign my lease renewal using an online form, so that I don't need to print and fill a pdf document.
 
-  As a tenant, I want to sign my entry condition report online so that I don't have to print and fill a pdf document.
+  - As a tenant, I want to sign my entry condition report online so that I don't have to print and fill a pdf document.
 
-  As a tenant, I want to review and print my previously signed documents so that I can always have a hard copy.
+  - As a tenant, I want to review and print my previously signed documents so that I can always have a hard copy.
 
-  As a tenant, I want the option to save my signature for future use so that I don't have to manually sign/upload my signature for each document.
+  - As a tenant, I want the option to save my signature for future use so that I don't have to manually sign/upload my signature for each document.
 
-  As a tenant, I want to receive a notification on my portal dashboard when a document has been uploaded for me to sign so that I don't forget.
+  - As a tenant, I want to receive a notification on my portal dashboard when a document has been uploaded for me to sign so that I don't forget.
 
   #### Calendar
-  As a property manager, I want to be able to add reminders for inspections that tenants can also see, so that everyone is aware of upcoming important dates
+  - As a property manager, I want to be able to add reminders for inspections that tenants can also see, so that everyone is aware of upcoming important dates
 
-  As a property manager, I want to be able to add things to my calendar that only I have visibility to, so that I can choose what information is visible by the tenants
+  - As a property manager, I want to be able to add things to my calendar that only I have visibility to, so that I can choose what information is visible by the tenants
 
-  As a property manager, I want to be able to block out periods of time that I am OOO and cannot assist with enquiries, so that tenants are aware of why I may not respond immediately.
+  - As a property manager, I want to be able to block out periods of time that I am OOO and cannot assist with enquiries, so that tenants are aware of why I may not respond immediately.
 
 ## Wireframes
 
