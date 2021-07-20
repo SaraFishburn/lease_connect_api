@@ -61,7 +61,7 @@ ActiveRecord::Schema.define(version: 2021_07_20_013413) do
     t.string "password_digest"
     t.string "phone_number"
     t.string "role_name"
-    t.bigint "house_id", null: false
+    t.bigint "house_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["house_id"], name: "index_users_on_house_id"
