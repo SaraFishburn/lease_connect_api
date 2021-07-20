@@ -6,11 +6,10 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-House.destroy_all
 User.destroy_all
 Event.destroy_all
-Maintenance.destroy_all
 Document.destroy_all
+House.destroy_all
 
 
 tamarama = House.create(title:"Tamarama Beach Unit", address:"1A Pacific Ave, Tamarama NSW 2026")
