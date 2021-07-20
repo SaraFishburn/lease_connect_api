@@ -31,10 +31,8 @@ class UserController < ApplicationController
   def create_user_params
     params.permit(:name, :email, :password, :password_confirmation, :phone_number, :role_name)
   end
-he
+
   def update_user_params
     params.permit(:name, :email, :phone_number, :role_name)
-
   end
-
 end

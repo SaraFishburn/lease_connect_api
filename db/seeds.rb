@@ -28,4 +28,4 @@ bronte.users.create(name:"Rafael Mello", email:"rafaelmello@rafael.com", passwor
 bronte.users.create(name:"Property Manager 3", email:"propertymanager3@realestate.com", password:"5678", phone_number:"0477 777 777", role_name:"property_manager")
 
 pointpiper.users.create(name:"Ben Elsom", email:"benelsom@ben.com", password:"efgh", phone_number:"0444 444 444", role_name:"tenant")
-pointpiper.users.create(name:"Property Manager 4", email:"propertymanager4@realestate.com", password:"efgh", phone_number:"0488 888 888", role_name:"property_manager")
+pointpiper.users.create(name:"Property Manager 4", email:"propertymanager4@realestate.com", password:"efgh", phone_number:"0488 888 888", role_name:"property_managerb")
