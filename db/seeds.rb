@@ -9,7 +9,7 @@
 House.destroy_all
 User.destroy_all
 Event.destroy_all
-Maintainence.destroy_all
+Maintenance.destroy_all
 Document.destroy_all
 
 
