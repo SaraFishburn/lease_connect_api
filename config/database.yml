@@ -25,6 +25,10 @@ development:
   <<: *default
   database: lease_connect_api_development
 
+  username: <%= ENV['PG_USERNAME'] %>
+  password: <%= ENV['PG_PASSWORD'] %>
+  host: <%= ENV['PG_HOST'] %>
+  port: <%= ENV['PG_PORT'] %>
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
