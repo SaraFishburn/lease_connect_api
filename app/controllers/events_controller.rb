@@ -1,8 +1,10 @@
 class EventsController < ApplicationController
   def index
-    events = houses.map(&:events)
-    render json: events.to_json
+    events = houses.reduce([]) do |acc, house|
+      acc + house.events
+    end
 
+    render json: events.to_json
   end
 
   def create; end
