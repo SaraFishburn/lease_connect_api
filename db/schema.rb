@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(version: 2021_07_20_013413) do
   create_table "houses", force: :cascade do |t|
     t.string "address"
     t.string "title"
+    t.string "image_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
