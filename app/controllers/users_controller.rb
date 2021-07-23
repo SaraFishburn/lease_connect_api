@@ -10,7 +10,8 @@ class UsersController < ApplicationController
   end
 
   def create
-    render json: User.create(create_user_params)
+    user = User.create(create_user_params)
+    render json: { user: user, authToken: user.jwt_token }
   end
 
   def update
