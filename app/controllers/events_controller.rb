@@ -1,7 +1,13 @@
 class EventsController < ApplicationController
   def index
     events = houses.reduce([]) do |acc, house|
-      acc + house.events
+      house_events = house.events
+      if current_user.role_name == 'property manager'
+        house_events = house_events.map do |event|
+          { **event.as_json, house: house }
+        end
+      end
+      acc + house_events
     end
 
     render json: events.to_json
