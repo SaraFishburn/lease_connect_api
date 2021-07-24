@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 2021_07_20_013413) do
 
   create_table "documents", force: :cascade do |t|
     t.string "title"
+    t.string "document_url"
     t.bigint "house_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
