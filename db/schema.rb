@@ -28,9 +28,11 @@ ActiveRecord::Schema.define(version: 2021_07_20_013413) do
     t.datetime "datetime"
     t.string "event_type"
     t.bigint "house_id"
+    t.bigint "maintenance_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["house_id"], name: "index_events_on_house_id"
+    t.index ["maintenance_id"], name: "index_events_on_maintenance_id"
   end
 
   create_table "houses", force: :cascade do |t|
@@ -48,12 +50,12 @@ ActiveRecord::Schema.define(version: 2021_07_20_013413) do
   end
 
   create_table "maintenances", force: :cascade do |t|
+    t.string "title"
     t.string "description"
+    t.string "image_url"
     t.bigint "house_id", null: false
-    t.bigint "event_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["event_id"], name: "index_maintenances_on_event_id"
     t.index ["house_id"], name: "index_maintenances_on_house_id"
   end
 
@@ -70,7 +72,6 @@ ActiveRecord::Schema.define(version: 2021_07_20_013413) do
   end
 
   add_foreign_key "documents", "houses"
-  add_foreign_key "maintenances", "events"
   add_foreign_key "maintenances", "houses"
   add_foreign_key "users", "houses"
 end
