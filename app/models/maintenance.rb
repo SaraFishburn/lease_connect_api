@@ -1,4 +1,4 @@
 class Maintenance < ApplicationRecord
   belongs_to :house
-  belongs_to :event
+  has_one :event
 end

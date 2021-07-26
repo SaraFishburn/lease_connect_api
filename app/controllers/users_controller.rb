@@ -15,18 +15,16 @@ class UsersController < ApplicationController
   end
 
   def update
-    render json: { error: 'cannot edit another user' }, status: 401 unless @user == current_user
-
     if params[:password]
       if current_user.authenticate(params[:password])
-        user.update(password: params[:new_password], password_confirmation: params[:password_confirmation])
+        current_user.update(password: params[:new_password], password_confirmation: params[:password_confirmation])
       else
-        render json: { error: 'incorrect password' }
+        return render json: { error: 'incorrect password' }
       end
     end
-    
-    @user.update(update_user_params)
-    render json: @user.to_json(except: [:password_digest])
+
+    current_user.update(update_user_params)
+    render json: current_user.to_json(except: [:password_digest])
   end
 
   def destroy
