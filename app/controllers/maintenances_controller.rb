@@ -1,5 +1,6 @@
 class MaintenancesController < ApplicationController
   def index
+    
   end
 
   def create
