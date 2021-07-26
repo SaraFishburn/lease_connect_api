@@ -4,7 +4,7 @@ class UserControllerTest < ActionDispatch::IntegrationTest
   setup do
     User.destroy_all
     @users = User.create([
-      {name: "Nic", email: "test1", password: "Passw0rd!", password_confirmation: "Passw0rd!"},
+      {name: "Kate", email: "test1", password: "Passw0rd!", password_confirmation: "Passw0rd!"},
       {name: "Sara", email: "test"}
     ])
   end
