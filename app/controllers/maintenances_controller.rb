@@ -1,6 +1,6 @@
 class MaintenancesController < ApplicationController
-  before_action :set_maintenance, except: [:index, :create]
-  
+  before_action :set_maintenance, except: %i[index create]
+
   def index
     render json: Maintenance.all.to_json
   end
@@ -8,12 +8,12 @@ class MaintenancesController < ApplicationController
   def show
     render json: {
       maintenance: @maintenance.to_json,
-      house: @maintenance.house_id.to_json,
+      house: @maintenance.house_id.to_json
     }
   end
 
   def create
-    render json: Maintenance.create(maintenance_params)
+    render json: Maintenance.create(**maintenance_params, house:current_user.house, event_id: Event.first.id)
   end
 
   def update
@@ -31,8 +31,6 @@ class MaintenancesController < ApplicationController
   end
 
   def maintenance_params
-    params.permit(:title, :description, :image_url)
+    params.require(:maintenance).permit(:title, :description, :image_url)
   end
-
 end
-

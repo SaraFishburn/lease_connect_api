@@ -17,7 +17,7 @@ class ApplicationController < ActionController::API
   end
 
   def current_user
-    return User.first
+    # return User.first
     # Check if the current_user has already been calculated
     return @current_user if @current_user
 
