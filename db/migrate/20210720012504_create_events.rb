@@ -4,6 +4,7 @@ class CreateEvents < ActiveRecord::Migration[6.1]
       t.datetime :datetime
       t.string :event_type
       t.references :house
+      t.references :maintenance
 
       t.timestamps
     end
