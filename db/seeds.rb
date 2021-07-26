@@ -99,3 +99,5 @@ pointpiper.tenants.create(
     phone_number:"0488 888 888", 
     role_name:"property_managerb"
 )
+
+Event.create(event_type: 'fuzz', datetime: Time.now)
