@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
     # else error sent invalid username or password
     if user
       # provide the user information as readable json for the frontend (excluding password)
-      render json: { user: user.to_json(except: %i[id password_digest]), authToken: user.jwt_token }
+      render json: { user: user.to_json(except: %i[password_digest]), authToken: user.jwt_token }
     else
       render json: { error: 'Invalid email or password' }, status: :unprocessable_entity
     end

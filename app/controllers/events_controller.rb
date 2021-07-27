@@ -21,13 +21,11 @@ class EventsController < ApplicationController
   private
 
   def houses
-    role = current_user.role_name
-
-    case role
+    case current_user.role_name
     when 'tenant'
       [current_user.house]
     when 'property manager'
-      current_user.properties
+      House.all
     end
   end
 
