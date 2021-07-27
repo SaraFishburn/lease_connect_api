@@ -469,18 +469,17 @@ We use an Agile approach to manage our project, holding daily stand-up meetings.
 
 ## Project Management and Task Delegation 
 
-We continued working with the Agile Methodology to manage our project, holding in-person and virtual stand-up meetings. These meetings allowed us to touch base and get on the same page about how the project was going. The in-person meetings allowed the present members to work together and share any question or problem.  
+We continued working with the Agile Methodology to manage our project, holding in-person and virtual stand-up meetings. These meetings allowed us to touch base and get on the same page about how the project was progressing. The in-person meetings allowed the present members to work together and share any questions or problems.  
 
-Virtual meetings (video calls) and text messaging (chat) were held in Discord. The calls were held in the morning and the chat was used as a 24/7 direct point of contact between the members.
+Virtual meetings (video calls) and text messaging (chat) were held in Discord. The calls were held in the morning and the chat was used as a 24/7 direct point of contact between the members.
 
-A sprint goal were set for each member of the team with daily tasks. Those tasks when complete were informed in the discord chat and push to the repo. 
+A sprint goal was set for each member of the team with daily tasks. Those tasks when complete were informed in the discord chat and pushed to the repo. 
 
-We tried to constantly 'pul' our local code to the repo. And daily 'pull' the latest code from the repo. The main goal was to always work in a fresh and updated copy of the code. 
+We tried to constantly 'push' our local code to the repo. And daily 'pull' the latest code from the repo. The main goal was to always work in a fresh and updated copy of the code. 
 
-With Github, all the features developments were made in a dedicated branch and push to the repo. After a pull request, another member had to check the code and merge it to the main branch.  
+With Github, all the features developments were made in a dedicated branch and pushed to the repo. After a pull request, another member had to check the code and merge it to the main branch.  
 
-Task delegations were set at the beginning of the project and adapt according to the need during the process. Given that all the members had a personal preference for front-end development, we decided to divide the work into features. Where all members should work with the back-end and front-end of the designated feature. This way any member was overload with undesirable tasks.   
-During the process, tasks and delegations had to be adapted to the need and in-person meetings took place for 4 days.
+Task delegations were set at the beginning of the project and adapted according to the need during the process. Given that all the members had a personal preference for front-end development, we decided to divide the work into features. Where all members should work with the back-end and front-end of the designated feature. This way, any member was not overloaded with undesirable tasks.    During the process, tasks and delegations had to be adapted to the need and in-person meetings took place for 4 days.
 
 The task delegation was input into the Trello board adding members to the user story cards.
 
