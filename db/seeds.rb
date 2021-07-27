@@ -6,6 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Maintenance.destroy_all
 User.destroy_all
 Event.destroy_all
 Document.destroy_all
@@ -97,5 +98,7 @@ pointpiper.tenants.create(
     email:"propertymanager4@realestate.com", 
     password:"efgh", 
     phone_number:"0488 888 888", 
-    role_name:"property_managerb"
+    role_name:"property_manager"
 )
+
+Event.create(event_type: 'fuzz', datetime: Time.now)

@@ -7,8 +7,8 @@ class HousesController < ApplicationController
 
   def show
     render json: {
-      property: @house.to_json,
-      tenants: @house.tenants.to_json(except: [:password_digest])
+      property: @house.as_json,
+      tenants: @house.tenants.as_json(except: [:password_digest])
     }
   end
 
@@ -17,7 +17,16 @@ class HousesController < ApplicationController
   end
 
   def update
-    @house.update(house_params)
+    new_house_users = User.where(id: params[:tenants])
+
+    users_to_remove = @house.tenants - new_house_users
+
+    User.destroy(users_to_remove.pluck(:id))
+
+    @house.tenants << new_house_users
+
+    @house.assign_attributes(house_params)
+    @house.save
   end
 
   def destroy
