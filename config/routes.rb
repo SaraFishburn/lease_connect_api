@@ -5,9 +5,11 @@ Rails.application.routes.draw do
     resources :users, except: [:update]
     patch '/users', to: 'users#update'
     put '/users', to: 'users#update'
-    resources :houses
+    get '/user', to: 'users#show'
+    resources :houses do
+      resources :documents
+    end
     resources :maintenances
     resources :events
-    resources :documents
   end
 end

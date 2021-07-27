@@ -1,12 +1,12 @@
 class UsersController < ApplicationController
-  before_action :set_user, except: %i[index create]
+  before_action :set_user, except: %i[index create show]
 
   def index
     render json: User.all.to_json(except: [:password_digest])
   end
 
   def show
-    render json: current_user.to_json(except: [:password_digest])
+    render json: current_user.to_json(except: [:password_digest], include: :house)
   end
 
   def create

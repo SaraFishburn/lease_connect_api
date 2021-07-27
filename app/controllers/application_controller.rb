@@ -7,6 +7,7 @@ class ApplicationController < ActionController::API
 
     # create new hash containing json data
     begin
+
       HashWithIndifferentAccess.new(
         # retrieve json data from decrypted info
         JWT.decode(token, Rails.application.secrets.secret_key_base)[0]
@@ -26,6 +27,7 @@ class ApplicationController < ActionController::API
 
     # If there is no data user isn't logged in so return nil
     return nil unless data
+    
 
     # Find the user and save it in an instance variable for later
     # (value is also returned)
