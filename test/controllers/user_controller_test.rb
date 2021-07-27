@@ -4,8 +4,8 @@ class UserControllerTest < ActionDispatch::IntegrationTest
   setup do
     User.destroy_all
     @users = User.create([
-      {name: "Kate", email: "test1", password: "Passw0rd!", password_confirmation: "Passw0rd!"},
-      {name: "Sara", email: "test"}
+      {name: "Nic", email: "nic@nic.com", password: "Passw0rd!", password_confirmation: "Passw0rd!"},
+      {name: "Sara", email: "sara@sara.com", password: "Passw0rd2!", password_confirmation: "Passw0rd2!"}
     ])
   end
 
@@ -22,7 +22,7 @@ class UserControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get create" do
-    post '/api/users', params: {name: "Raf", email: "raftest", password: "Passw0rd!", password_confirmation: "Passw0rd!"}
+    post '/api/users', params: {name: "Raf", email: "raf@raf.com", password: "Passw0rd3!", password_confirmation: "Passw0rd3!"}
     assert_response :success
     assert @response.body, @users[2].to_json(except: [:password_digest])
   end
