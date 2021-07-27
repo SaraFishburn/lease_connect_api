@@ -13,8 +13,7 @@ class MaintenancesController < ApplicationController
   end
 
   def create
-    puts("Hello Gemma!")
-    render json: Maintenance.create(**maintenance_params, house: current_user.house, event_id: 1)
+    render json: Maintenance.create(**maintenance_params, house:current_user.house, event_id: Event.first.id)
   end
 
   def update
