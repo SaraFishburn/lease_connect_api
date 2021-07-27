@@ -1,20 +1,22 @@
 class EventsController < ApplicationController
+
   def index
     events = houses.reduce([]) do |acc, house|
-      acc + case current_user.role_name
-            when 'property manager'
-              house.events.as_json(include: :house)
-            else
-              house.events.as_json
-            end
+      house_events = house.events.order(:datetime)
+      if current_user.role_name == 'property manager'
+        house_events = house_events.map do |event|
+          { **event.as_json, house: house }
+        end
+      end
+      acc + house_events
     end
 
     render json: events.to_json
   end
 
-  def create; end
-
-  def destroy; end
+  def create
+    Event.create(event_params)
+  end
 
   private
 
@@ -28,15 +30,8 @@ class EventsController < ApplicationController
       current_user.properties
     end
   end
+
+  def event_params
+    params.require(:event).permit(:datetime, :event_type, :house_id)
+  end
 end
-
-# find current user
-
-# if current user has role 'tenant'
-#   find the house
-# else if current user has role 'property manager'
-#   find the list of pinned houses
-
-# iterate over found houses and retrieve all events asociated
-
-# send events to front end
