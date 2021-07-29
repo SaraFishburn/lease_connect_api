@@ -13,7 +13,7 @@ class MaintenancesController < ApplicationController
   end
 
   def create
-    render json: Maintenance.create(**maintenance_params, house:current_user.house, event_id: Event.first.id)
+    render json: Maintenance.create(**maintenance_params, house: current_user.house)
   end
 
   def update
