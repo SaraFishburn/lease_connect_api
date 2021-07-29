@@ -1,0 +1,7 @@
+I added a gem under development section of your gemfile to get ENV variables working:
+
+  gem 'dotenv-rails'
+
+Also your database.yml was using the wrong username you needed it to be "sarafishburn" not "sara"
+
+Also the LOCAL_FRONT_END was http://localhost:3000/ it should have been http://localhost:3000 with no slash
