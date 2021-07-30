@@ -534,7 +534,15 @@ The task delegation was input into the Trello board adding members to the user s
 <details>
 <summary>Manual Testing</summary>
 
-![Manual](docs/test/manualtesting.png)
+Production Testing
+
+![Manual](docs/test/production.png)
+
+<br/>
+
+Development Testing
+
+![Development](docs/test/development.png)
 
 </details>
 
@@ -545,6 +553,7 @@ The task delegation was input into the Trello board adding members to the user s
 <details>
 <summary>Front-End Testing</summary>
 
+![Cypress](docs/test/cypress2.png)
 ![Cypress](docs/test/cypress.png)
 ![Cypress](docs/test/cypress1.png)
 

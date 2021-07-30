@@ -22,7 +22,7 @@ class UserControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get create" do
-    post '/api/users', params: {name: "Raf", email: "raf@raf.com", password: "Passw0rd3!", password_confirmation: "Passw0rd3!"}
+    post '/api/users', params: {name: "Raf", email: "raf@raf.com", password: "Passw0rd3!", password_confirmation: "Passw0rd3!", role_name:"admin", house_id:10}
     assert_response :success
     assert @response.body, @users[2].to_json(except: [:password_digest])
   end
@@ -37,7 +37,7 @@ class UserControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update password when previous password was passed" do
-    post "/api/sessions/sign_in", params: {email: 'test1', password: 'Passw0rd!'}
+    post "/api/sessions/sign_in", params: {email: 'nic@nic.com', password: 'Passw0rd!'}
     token = JSON.parse(@response.body)[:authToken]
 
     put "/api/users/#{@users[0].id}", params: {password: "Passw0rd!", new_password: "Passw0rd@", new_password_confirmation: "Passw0rd@"}, headers: { Authorization: "Bearer #{token}"}
