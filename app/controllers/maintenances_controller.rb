@@ -1,15 +1,13 @@
 class MaintenancesController < ApplicationController
   before_action :set_maintenance, except: %i[index create]
 
+  # method to render maintenance requests associated with the users account and role
   def index
-    render json: Maintenance.all.to_json
-  end
-
-  def show
-    render json: {
-      maintenance: @maintenance.to_json,
-      house: @maintenance.house_id.to_json
-    }
+    if current_user.role_name == 'tenant'
+      render json: Maintenance.where(house_id: current_user.house_id).to_json
+    else
+      render json: Maintenance.to_json
+    end
   end
 
   def create
@@ -17,11 +15,8 @@ class MaintenancesController < ApplicationController
   end
 
   def update
+    authorized('property manager', 'admin')
     @maintenance.update(maintenance_params)
-  end
-
-  def destroy
-    @maintenance.destroy
   end
 
   private
