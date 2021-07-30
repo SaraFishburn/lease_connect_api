@@ -1,5 +1,4 @@
 class EventsController < ApplicationController
-
   def index
     events = houses.reduce([]) do |acc, house|
       house_events = house.events.order(:datetime)
@@ -15,6 +14,7 @@ class EventsController < ApplicationController
   end
 
   def create
+    authorized('property manager', 'admin')
     Event.create(event_params)
   end
 
