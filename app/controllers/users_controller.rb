@@ -11,7 +11,12 @@ class UsersController < ApplicationController
 
   def create
     user = User.create(create_user_params)
-    render json: { user: user, authToken: user.jwt_token }
+    if user.save
+      render json: { user: user, authToken: user.jwt_token }
+    else
+      p user.errors.full_messages
+      render json: user.errors.full_messages, status: 422
+    end
   end
 
   def update
