@@ -30,6 +30,8 @@ class HousesController < ApplicationController
   end
 
   def destroy
+    return render json: { error: 'ERROR: tenants must be removed before deleting house' }, status: 401 unless @house.tenants.count.zero?
+
     @house.destroy
   end
 
