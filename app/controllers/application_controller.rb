@@ -7,7 +7,6 @@ class ApplicationController < ActionController::API
 
     # create new hash containing json data
     begin
-
       HashWithIndifferentAccess.new(
         # retrieve json data from decrypted info
         JWT.decode(token, Rails.application.secrets.secret_key_base)[0]
@@ -27,10 +26,18 @@ class ApplicationController < ActionController::API
 
     # If there is no data user isn't logged in so return nil
     return nil unless data
-    
 
     # Find the user and save it in an instance variable for later
     # (value is also returned)
     @current_user = User.find(data[:id])
+  end
+
+  # Method to revoke access to controller actions to unauthorized users
+  # To be included in actions that have specific permissions
+  def authorized(roles)
+    return true if [*roles].include?(current_user.role_name)
+
+    render json: { error: 'you do not have permission to perform this action' }, status: 403
+    false
   end
 end
