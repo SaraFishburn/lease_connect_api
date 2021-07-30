@@ -11,12 +11,14 @@ class MaintenancesController < ApplicationController
   end
 
   def create
+    authorized("tenant")
     render json: Maintenance.create(**maintenance_params, house: current_user.house)
   end
 
   def update
     authorized('property manager', 'admin')
-    @maintenance.update(maintenance_params)
+
+    @maintenance.update(status: params[:status])
   end
 
   private
