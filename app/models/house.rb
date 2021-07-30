@@ -3,6 +3,7 @@ class House < ApplicationRecord
 
   has_many :events
   has_many :documents
+  has_many :maintenances
 
-  validates :title, :address,  presence: true
+  validates :title, :address, presence: true
 end

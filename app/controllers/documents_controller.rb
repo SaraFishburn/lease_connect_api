@@ -1,5 +1,4 @@
 class DocumentsController < ApplicationController
-
   # method to provide all houses to property managers and admin and the current users house to a tenant
   def index
     if current_user.role_name == 'tenant'

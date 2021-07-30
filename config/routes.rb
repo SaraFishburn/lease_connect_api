@@ -8,8 +8,8 @@ Rails.application.routes.draw do
     get '/user', to: 'users#show'
     resources :houses do
       resources :documents
+      resources :maintenances
     end
-    resources :maintenances
     resources :events
   end
 end
