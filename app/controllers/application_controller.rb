@@ -34,7 +34,7 @@ class ApplicationController < ActionController::API
 
   # Method to revoke access to controller actions to unauthorized users
   # To be included in actions that have specific permissions
-  def authorized(roles)
+  def authorized(*roles)
     return true if [*roles].include?(current_user.role_name)
 
     render json: { error: 'you do not have permission to perform this action' }, status: 403
