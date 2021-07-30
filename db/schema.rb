@@ -28,9 +28,11 @@ ActiveRecord::Schema.define(version: 2021_07_30_045323) do
     t.datetime "datetime"
     t.string "event_type"
     t.bigint "house_id"
+    t.bigint "maintenance_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["house_id"], name: "index_events_on_house_id"
+    t.index ["maintenance_id"], name: "index_events_on_maintenance_id"
   end
 
   create_table "houses", force: :cascade do |t|
@@ -39,12 +41,6 @@ ActiveRecord::Schema.define(version: 2021_07_30_045323) do
     t.string "image_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "houses_users", id: false, force: :cascade do |t|
-    t.bigint "house_id", null: false
-    t.bigint "user_id", null: false
-    t.index ["user_id", "house_id"], name: "index_houses_users_on_user_id_and_house_id"
   end
 
   create_table "maintenances", force: :cascade do |t|

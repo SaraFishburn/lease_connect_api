@@ -4,9 +4,9 @@ class MaintenancesController < ApplicationController
   # method to render maintenance requests associated with the users account and role
   def index
     if current_user.role_name == 'tenant'
-      render json: Maintenance.where(house_id: current_user.house_id).to_json
+      render json: current_user.house.maintenances.as_json
     else
-      render json: Maintenance.to_json
+      render json: House.find(params[:house_id]).maintenances.as_json
     end
   end
 

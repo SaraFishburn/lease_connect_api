@@ -4,7 +4,7 @@ class HousesController < ApplicationController
   # method to provide all houses in db
   def index
     # all houses only available to property managers and admin
-    authorize('property manager', 'admin')
+    authorized('property manager', 'admin')
     render json: House.all.to_json
   end
 
