@@ -10,11 +10,13 @@ class MaintenancesController < ApplicationController
     end
   end
 
+  # method to ensure only tenants can create a new maintenance request
   def create
     authorized("tenant")
     render json: Maintenance.create(**maintenance_params, house: current_user.house)
   end
 
+  # method to authorize only property managers and admins to update the status of requests
   def update
     authorized('property manager', 'admin')
 
