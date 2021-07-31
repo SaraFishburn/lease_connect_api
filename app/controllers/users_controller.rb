@@ -11,7 +11,7 @@ class UsersController < ApplicationController
 
   # return the details for the current user
   def show
-    render json: current_user.to_json(except: [:password_digest], include: :house)
+    render json: current_user.as_json(except: [:password_digest], include: :house)
   end
 
   # method to create a user record in the db
