@@ -12,7 +12,7 @@ class EventsController < ApplicationController
       acc + house_events
     end
 
-    render json: events.to_json
+    render json: events.as_json
   end
 
   # method to create an event record in db

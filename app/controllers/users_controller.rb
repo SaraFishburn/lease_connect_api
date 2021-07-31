@@ -6,12 +6,12 @@ class UsersController < ApplicationController
     # only property managers and admin should be able to perform this action
     authorized('property manager', 'admin')
 
-    render json: User.all.to_json(except: [:password_digest])
+    render json: User.all.as_json(except: [:password_digest])
   end
 
   # return the details for the current user
   def show
-    render json: current_user.to_json(except: [:password_digest], include: :house)
+    render json: current_user.as_json(except: [:password_digest], include: :house)
   end
 
   # method to create a user record in the db
@@ -41,7 +41,7 @@ class UsersController < ApplicationController
 
     # update the users details in db and return them
     current_user.update(update_user_params)
-    render json: current_user.to_json(except: [:password_digest])
+    render json: current_user.as_json(except: [:password_digest])
   end
 
   # method to remove a user from the db
