@@ -30,6 +30,9 @@ class ApplicationController < ActionController::API
     # Find the user and save it in an instance variable for later
     # (value is also returned)
     @current_user = User.find(data[:id])
+
+    puts '---------------------------------'
+    puts 'CURRENT USER'
     puts current_user
   end
 
