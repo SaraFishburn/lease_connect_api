@@ -13,4 +13,4 @@ class SessionsController < ApplicationController
       render json: { error: 'Invalid email or password' }, status: :unprocessable_entity
     end
   end
-end
+end   
