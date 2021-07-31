@@ -7,7 +7,7 @@ class UsersController < ApplicationController
     authorized('property manager', 'admin')
 
     render json: User.all.as_json(except: [:password_digest])
-  end
+  end     
 
   # return the details for the current user
   def show
