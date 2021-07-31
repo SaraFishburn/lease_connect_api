@@ -13,7 +13,7 @@ class ApplicationController < ActionController::API
     begin
       HashWithIndifferentAccess.new(
         # retrieve json data from decrypted info
-        JWT.decode(token, Rails.application.secret_key_base)[0]
+        JWT.decode(token, Rails.application.secret_key_base, true)[0]
       )
     rescue JWT::DecodeError => e
       puts e
