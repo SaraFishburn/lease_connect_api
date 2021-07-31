@@ -5,7 +5,9 @@ class ApplicationController < ActionController::API
   def jwt_data
     token = request.headers['Authorization'].split(' ')[1]
     puts token
+    puts "SECRET KEY BASE"
     puts Rails.application.secret_key_base
+    puts "^^^^^^^^^"
 
     # create new hash containing json data
     begin
@@ -13,7 +15,8 @@ class ApplicationController < ActionController::API
         # retrieve json data from decrypted info
         JWT.decode(token, Rails.application.secret_key_base)[0]
       )
-    rescue JWT::DecodeError
+    rescue JWT::DecodeError => e
+      puts e
       puts "decode error"
       nil
     end
